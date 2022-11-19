@@ -1,0 +1,246 @@
+@charset "UTF-8";
+.tamaño_100, main .info .info__uno .info__uno--img img, main .info .info__dos .info__uno--img img, main .info .info__dos .info__dos--img img, main .class__info .class__info--img1 img, main .class__info .class__info--img2 img, main .class__info .class__info--img3 img, main .galeria div img {
+  width: 100%;
+  height: 100%; }
+
+.bordes, main .video .video__texto, main .info .info__uno .info__uno--text, main .info .info__dos .info__uno--text, main .info .info__dos .info__dos--text, main .ubicacion .ubicacion__text, main .map .iframe {
+  border-color: gray;
+  border-width: 10px;
+  border-style: ridge; }
+
+.h2, main .video .video__texto h2, main .info .info__uno .info__uno--text h2, main .info .info__dos .info__uno--text h2, main .info .info__dos .info__dos--text h2, main .class__info .class__info--uno h2, main .class__info .class__info--dos h2, main .class__info .class__info--tres h2 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Permanent Marker', cursive; }
+
+.p, main .video .video__texto p, main .info .info__uno .info__uno--text p, main .info .info__dos .info__uno--text p, main .info .info__dos .info__dos--text p, main .class__info .class__info--uno p, main .class__info .class__info--dos p, main .class__info .class__info--tres p {
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  padding-top: 20px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.menu {
+  background-color: black;
+  height: 130px;
+  width: 100%; }
+  .menu .menu__img__lista {
+    background-color: black;
+    display: flex;
+    height: 140px;
+    width: 100%;
+    position: fixed; }
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%; }
+  .menu li {
+    list-style-type: none;
+    transition: 0.3s; }
+  .menu li:hover {
+    transform: scale(1.4, 1.4); }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Acme', sans-serif; }
+
+.banner {
+  width: 100%; }
+  .banner .banner__img {
+    background-color: black;
+    width: 100%; }
+    .banner .banner__img img {
+      width: 100%; }
+
+main {
+  background-image: linear-gradient(black 50%, #121212, #5a5a5a);
+  height: 100%;
+  width: 100%; }
+  main .video {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-template-rows: 400px;
+    justify-content: center;
+    grid-template-areas: "texto video";
+    justify-items: center;
+    align-items: center; }
+    main .video .video__texto {
+      height: 300px;
+      width: 400px;
+      background-color: #100f0f; }
+  main .info {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1000px 1000px;
+    justify-items: center;
+    align-items: center; }
+    main .info .info__uno, main .info .info__dos {
+      height: 650px;
+      width: 500px;
+      background-color: #100f0f; }
+      main .info .info__uno .info__uno--img, main .info .info__dos .info__uno--img {
+        height: 400px;
+        width: 340px;
+        position: relative;
+        left: 300px;
+        bottom: 70px; }
+      main .info .info__uno .info__uno--text, main .info .info__dos .info__uno--text {
+        height: 250px;
+        width: 350px;
+        background-color: black;
+        position: relative;
+        right: 100px;
+        bottom: 100px; }
+    main .info .info__dos .info__dos--img {
+      height: 400px;
+      width: 340px;
+      position: relative;
+      bottom: 100px;
+      right: 65px; }
+    main .info .info__dos .info__dos--text {
+      height: 250px;
+      width: 350px;
+      background-color: black;
+      position: relative;
+      left: 250px;
+      bottom: 50px; }
+  main .class__info {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 350px 350px 350px;
+    justify-content: center;
+    grid-template-areas: "texto1 texto1 img1" "img2 texto2 texto2" "texto3 texto3 img3"; }
+    main .class__info .class__info--uno {
+      height: 80%;
+      width: 650px;
+      grid-area: texto1;
+      align-self: center; }
+    main .class__info .class__info--img1 {
+      height: 80%;
+      width: 100%;
+      grid-area: img1;
+      align-self: center; }
+    main .class__info .class__info--img2 {
+      height: 80%;
+      width: 100%;
+      grid-area: img2;
+      align-self: center; }
+    main .class__info .class__info--dos {
+      height: 80%;
+      width: 650px;
+      grid-area: texto2;
+      justify-self: center;
+      align-self: center; }
+    main .class__info .class__info--tres {
+      height: 80%;
+      width: 650px;
+      grid-area: texto3;
+      justify-self: center;
+      align-self: center; }
+    main .class__info .class__info--img3 {
+      height: 80%;
+      width: 100%;
+      grid-area: img3;
+      align-self: center; }
+  main .galeria {
+    height: 1150px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9";
+    justify-content: space-evenly;
+    align-content: space-around; }
+  main .contacto {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-areas: "info1 form" "info2 form" "info3 form" "info4 form";
+    align-content: center;
+    justify-content: center; }
+    main .contacto #contacto__wsp, main .contacto #contacto__wsp--dos, main .contacto #contacto__inst, main .contacto #contacto__fbook {
+      display: flex;
+      align-items: center; }
+      main .contacto #contacto__wsp svg, main .contacto #contacto__wsp--dos svg, main .contacto #contacto__inst svg, main .contacto #contacto__fbook svg {
+        color: green;
+        width: 60px;
+        height: 60px; }
+      main .contacto #contacto__wsp h2, main .contacto #contacto__wsp--dos h2, main .contacto #contacto__inst h2, main .contacto #contacto__fbook h2 {
+        color: white;
+        font-family: 'Anton', sans-serif;
+        padding-left: 50px; }
+    main .contacto #contacto__wsp--dos {
+      grid-area: info2; }
+    main .contacto #contacto__inst {
+      grid-area: info3; }
+      main .contacto #contacto__inst svg {
+        color: #ae0d9e;
+        height: 60px;
+        width: 60px; }
+    main .contacto #contacto__fbook {
+      grid-area: info4; }
+      main .contacto #contacto__fbook svg {
+        color: blue; }
+    main .contacto #contacto__form {
+      grid-area: form;
+      height: 300px; }
+  main .ubicacion {
+    display: flex;
+    justify-content: center; }
+    main .ubicacion .ubicacion__text {
+      display: flex;
+      height: 100px;
+      width: 700px;
+      background-color: #100f0f;
+      align-items: center; }
+      main .ubicacion .ubicacion__text h2 {
+        color: white;
+        font-family: 'Anton', sans-serif; }
+  main .map {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; }
+
+footer {
+  height: 100px;
+  background-color: #373b3b; }
+  footer div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer div p {
+      color: white;
+      font-family: 'Libre Baskerville', serif; }
+
+@media only screen and (max-width: 600px) {
+  .menu__img__lista {
+    position: absolute !important; }
+    .menu__img__lista ul {
+      flex-direction: column;
+      align-items: flex-start; }
+  .video {
+    grid-template-columns: 100% !important;
+    grid-template-rows: 400px 400px !important;
+    grid-template-areas: "video" "texto" !important; }
+  .info__uno, main .info .info__dos {
+    height: 550px !important;
+    width: 400px !important; }
+    .info__uno .info__uno--img, main .info .info__dos .info__uno--img {
+      right: 500px !important; }
+  .class__info {
+    grid-template-columns: 100% !important;
+    grid-template-rows: 500px 300px 300px 500px 500px 300px !important;
+    grid-template-areas: "texto1" "img1" "img2" "texto2" "texto3" "img3" !important; }
+  .galeria {
+    grid-template-columns: 100% !important;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px 350px 350px 350px !important;
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9" !important;
+    height: 3500px !important; } }
